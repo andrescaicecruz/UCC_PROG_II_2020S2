@@ -21,7 +21,7 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            <command> [<args>]
 
 C:\herramientascom\clase3>git remote origin https://github.com/andrescaicecruz/U
-CC_PROG_II_2020S2.git
+CC_PROG_II_2020S2.gitgit 
 error: Unknown subcommand: origin
 usage: git remote [-v | --verbose]
    or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--m
