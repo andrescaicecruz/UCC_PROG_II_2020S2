@@ -1,0 +1,226 @@
+Microsoft Windows [Versión 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Reservados todos los derechos.
+
+C:\Users\Andres Caicedo>cd..
+
+C:\Users>cd..
+
+C:\>cd herramientascom
+
+C:\herramientascom>cd clase3
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git add .
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git commit -m "Trabajos hcom"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git commit -a "herramientas1"
+fatal: paths 'herramientas1 ...' with -a does not make sense
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git remote -v
+origin  https://github.com/andrescaicecruz/UCC_PROG_II_2020S2.git (fetch)
+origin  https://github.com/andrescaicecruz/UCC_PROG_II_2020S2.git (push)
+
+C:\herramientascom\clase3>git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+C:\herramientascom\clase3>git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--m
+irror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)..
+.]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\herramientascom\clase3>git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\herramientascom\clase3>git push origin master --force
+Enumerating objects: 49, done.
+Counting objects: 100% (49/49), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (49/49), 278.91 KiB | 2.11 MiB/s, done.
+Total 49 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/andrescaicecruz/UCC_PROG_II_2020S2.git
+ + bb045d4...35932c3 master -> master (forced update)
+
+C:\herramientascom\clase3>git push origin master --force https://github.com/andr
+escaicecruz/UCC_PROG_II_2020S2.git
+fatal: invalid refspec 'https://github.com/andrescaicecruz/UCC_PROG_II_2020S2.gi
+t'
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git push origin master
+Everything up-to-date
+
+C:\herramientascom\clase3>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 2EDC-773F
+
+ Directorio de C:\herramientascom\clase3
+
+30/09/2020  08:52 p.m.    <DIR>          .
+30/09/2020  08:52 p.m.    <DIR>          ..
+26/09/2020  04:22 p.m.    <DIR>          26-09-2020
+12/09/2020  02:57 p.m.    <DIR>          bostra-web-standar
+30/09/2020  09:53 p.m.    <DIR>          Operadores aritmeticos
+28/09/2020  08:30 p.m.    <DIR>          Repositorio remoto
+28/09/2020  08:39 p.m.    <DIR>          UCC_PROG_II_2020S2
+               0 archivos              0 bytes
+               7 dirs  97.518.706.688 bytes libres
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   26-09-2020/Clase.txt
+        modified:   Repositorio remoto (untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Operadores aritmeticos/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git add .
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   26-09-2020/Clase.txt
+        new file:   Operadores aritmeticos/Opera aritm.txt
+        new file:   Operadores aritmeticos/Operadores aritmeticos.docx
+        new file:   Operadores aritmeticos/ejercicio operadores aritmeticos.jpg
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+
+C:\herramientascom\clase3>git commit -m "operadores aritmeticos"
+[master 28afd87] operadores aritmeticos
+ 4 files changed, 22 insertions(+), 1 deletion(-)
+ create mode 100644 Operadores aritmeticos/Opera aritm.txt
+ create mode 100644 Operadores aritmeticos/Operadores aritmeticos.docx
+ create mode 100644 Operadores aritmeticos/ejercicio operadores aritmeticos.jpg
+
+C:\herramientascom\clase3>git add .
+
+C:\herramientascom\clase3>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   Repositorio remoto (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\herramientascom\clase3>git remote -v
+origin  https://github.com/andrescaicecruz/UCC_PROG_II_2020S2.git (fetch)
+origin  https://github.com/andrescaicecruz/UCC_PROG_II_2020S2.git (push)
+
+C:\herramientascom\clase3>git push origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 274.40 KiB | 5.18 MiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/andrescaicecruz/UCC_PROG_II_2020S2.git
+   35932c3..28afd87  master -> master
+
+C:\herramientascom\clase3>git push origin master
+Everything up-to-date
+
+C:\herramientascom\clase3>
