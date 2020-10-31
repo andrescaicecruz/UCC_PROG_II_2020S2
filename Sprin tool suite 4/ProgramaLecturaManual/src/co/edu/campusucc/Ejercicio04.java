@@ -2,7 +2,7 @@ package co.edu.campusucc;
 
 import java.util.Scanner;
 
-public class Ejercicio01 {
+public class Ejercicio04 {
 	public static void main(String[] args) {
 		
 		System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
@@ -16,7 +16,7 @@ public class Ejercicio01 {
 		  System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
 	      System.out.println("|                                           |");
 		  System.out.println("0                   Programa                0");
-		  System.out.println("|                 Ejercicio 01              |");
+		  System.out.println("|                 Ejercicio 04              |");
 		  System.out.println("0                                           0");
 		  System.out.println("|                                           |");
 		  System.out.println("|                                           |");
@@ -27,18 +27,19 @@ public class Ejercicio01 {
 	    boolean tr1=false,tr2=false,k;
 
 	    try (Scanner leer = new Scanner(System.in)) {
-			System.out.print("¿La tierra es redonda [0]...Falso [1]...Verdad? ");
+			System.out.print("¿Inglaterra es un pais suramericano? [0]...Falso [1]...Verdad? ");
 			l1 = leer.nextInt();
-			System.out.print("¿25 es un cuadrado perfecto [0]...Falso [1]...Verdad? ");
+			System.out.print("¿Marie Currie invento el radio? [0]...Falso [1]...Verdad? ");
 			l2 = leer.nextInt();
 		}
 
-	    if (l1!=0) tr1=true;
-	    if (l2!=0) tr2=true;
+	    if (l1==0) tr1=true;
+	    if (l2==0) tr2=true;
 
 	    k= tr1 & tr2;
 
-	      System.out.print("El valor de la variable k es: " +k);
+	      System.out.print("El valor de la variable k es: "+k);
+		
 
 	}
 
