@@ -2,7 +2,7 @@ package co.edu.campusucc;
 
 import java.util.Scanner;
 
-public class Ejercicio05 {
+public class TallerM3CableAsad00 {
 	public static void main(String[] args) {
 		
 		System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
@@ -12,35 +12,48 @@ public class Ejercicio05 {
 		  System.out.println("0           Tercer semestre                 0");
 		  System.out.println("|              ID 759064                    |");
 		  System.out.println("0     Profesor Harold Adrian Bolanos        0");
-		  System.out.println("|           24-Octubre-2020                 |");
+		  System.out.println("|           07-Noviembre-2020               |");
 		  System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
 	      System.out.println("|                                           |");
-		  System.out.println("0                   Programa                0");
-		  System.out.println("|                 Ejercicio 05              |");
+		  System.out.println("0    Programacion java seleccion multiple   0");
+		  System.out.println("|                 Cable_Asad                |");
 		  System.out.println("0                                           0");
 		  System.out.println("|                                           |");
 		  System.out.println("|                                           |");
 		  System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
 		  System.out.println();
 		
-		int l1,l2;
-	    boolean tr1=false,tr2=false,k;
-
-	    try (Scanner leer = new Scanner(System.in)) {
-			System.out.print("¿La tierra es un satelite? [0]...Falso [1]...Verdad? ");
-			l1 = leer.nextInt();
-			System.out.print("¿Azul es una obra literaria de Ruben Dario? [0]...Falso [1]...Verdad? ");
-			l2 = leer.nextInt();
+		  try (Scanner leer = new Scanner(System.in)) {
+			int categ;
+			  double sueldo;
+			  
+			  System.out.println("Digitar el nombre del empleado : ");
+			  leer.next ();
+			  System.out.println("Digitar la categoria de 1 a 4: ");
+			  categ = leer.nextInt ();
+			  System.out.println("Digitar sueldo del empleado : ");
+			  sueldo = leer.nextDouble ();
+			  
+			  switch (categ) { 
+			  case 1: sueldo = sueldo * 1.15 ;
+			  break;
+			  case 2: sueldo = sueldo * 1.10 ;
+			  break;
+			  case 3: sueldo = sueldo * 1.08 ;
+			  break;
+			  case 4: sueldo = sueldo * 1.07 ;
+			  break;
+			  
+			  default:
+				 sueldo = 0;
+					  System.out.println("La categoria no existe : ");
+			  
+			  }
+			  
+			  
+			  
+			  System.out.println("El sueldo a pagar es : " +sueldo);
 		}
-
-	    if (l1==1) tr1=true;
-	    if (l2==1) tr2=true;
-
-	    k= tr1 & tr2;
-
-	      System.out.print("El valor de la variable k es: "+k);
-		
-
 	}
 
 }
