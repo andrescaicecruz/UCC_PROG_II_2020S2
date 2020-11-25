@@ -75,7 +75,7 @@ public class TallerM2001PorcentajeDeNotas003 {
 	}
 	
 	
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		TallerM2001PorcentajeDeNotas003 nt = new TallerM2001PorcentajeDeNotas003();
 		nt.ingresenotas();
 		nt.calculonotas();

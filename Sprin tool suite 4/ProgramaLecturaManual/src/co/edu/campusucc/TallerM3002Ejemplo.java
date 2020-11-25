@@ -2,7 +2,7 @@ package co.edu.campusucc;
 
 import java.util.Scanner;
 
-public class TallerM3002Eje04 {
+public class TallerM3002Ejemplo {
 	public static void main(String[] args) {
 		
 		  System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
@@ -17,35 +17,21 @@ public class TallerM3002Eje04 {
 	      System.out.println("|                                           |");
 		  System.out.println("0           TallerM3002  Programa           0");
 		  System.out.println("|               Ejercicio 004               |");
-		  System.out.println("0 determinar si el digito esta en el numero 0");
+		  System.out.println("0                Numero mayor               0");
 		  System.out.println("|                                           |");
 		  System.out.println("|                                           |");
 		  System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
 		  System.out.println();
 		  
-		  
-		  int numero,digito,invertido=0,resto,existe=0;
+		  char opc;
 
 		    try (Scanner leer = new Scanner(System.in)) {
-				System.out.print("Ingrese un numero: ");
-				numero= leer.nextInt();
-				System.out.print("Ingrese un digito: ");
-				digito= leer.nextInt();
+				do{
+				  System.out.print("\nDesea terminar? (S o N): ");
+				  opc = leer.next().charAt(0);
+
+				} while(opc=='n'||opc=='N');
 			}
-
-		    do{
-		      resto= numero%10;
-		      invertido=invertido*10+resto;
-		      numero/=10;
-		      if (digito==resto)
-		        existe=1;
-
-		    } while(numero>0 && existe==0);
-		    if (existe==1)
-		      System.out.print("\nEl digito existe");
-		    else
-		      System.out.print("\nEl digito no existe");
-		  
 
 	}
 

@@ -3,7 +3,7 @@ package co.edu.campusucc;
 import java.util.Scanner;
 
 public class RetoDecimalBinarioExacecimal {
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		
 		System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
 		  System.out.println("|       Andres Felipe Caicedo Cruz          |");

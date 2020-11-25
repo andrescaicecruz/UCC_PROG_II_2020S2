@@ -2,7 +2,7 @@ package co.edu.campusucc;
 
 import java.util.Scanner;
 
-public class TallerM002Eje03 {
+public class TallerM3002Eje03 {
 	public static void main(String[] args) {
 		
 		  System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");

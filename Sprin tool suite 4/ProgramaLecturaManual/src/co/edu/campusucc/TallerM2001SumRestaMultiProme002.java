@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TallerM2001SumRestaMultiProme002 {
 	private static Scanner entrada;
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		
 		System.out.println("0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0");
 		  System.out.println("|       Andres Felipe Caicedo Cruz          |");
